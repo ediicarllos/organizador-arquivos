@@ -21,12 +21,17 @@ git clone https://github.com/SEU_USUARIO/organizador-arquivos.git
 cd organizador-arquivos
 ```
 2. (Opcional) Crie e ative um ambiente virtual:
-
+```bash
 python -m venv venv
+```
 # Windows
+```bash
 venv\Scripts\activate
+```
 # Linux/Mac
+```bash
 source venv/bin/activate
+```
 
 3. Rode o script:
 
