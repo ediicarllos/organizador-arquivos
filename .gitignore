@@ -1,0 +1,9 @@
+# Ignorar venv
+venv/
+
+# Ignorar arquivos temporários
+__pycache__/
+*.pyc
+
+# Ignorar configs locais
+*.log
