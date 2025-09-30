@@ -21,7 +21,7 @@ def organizar_pasta(pasta_origem):
         if not os.path.exists(caminho_pasta):
             os.makedirs(caminho_pasta)
 
-    # Mover arquivos
+    # Percorrer todos os arquivos
     for arquivo in os.listdir(pasta_origem):
         caminho_arquivo = os.path.join(pasta_origem, arquivo)
 
@@ -39,6 +39,9 @@ def organizar_pasta(pasta_origem):
 
 
 if __name__ == "__main__":
-    # Altere aqui para a pasta que você deseja organizar
-    pasta_alvo = r"C:\Users\ediic\Downloads"
-    organizar_pasta(pasta_alvo)
+    pasta_alvo = input("📂 Digite o caminho da pasta que deseja organizar: ").strip()
+
+    if os.path.exists(pasta_alvo) and os.path.isdir(pasta_alvo):
+        organizar_pasta(pasta_alvo)
+    else:
+        print("⚠️ Caminho inválido! Verifique e tente novamente.")
